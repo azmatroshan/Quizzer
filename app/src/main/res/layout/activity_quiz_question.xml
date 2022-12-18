@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_question"
+            android:layout_margin="10dp"
+            android:textSize="22sp"
+            android:textColor="#363A43"
+            android:gravity="center"
+            tools:text="Who invented the first Computer?"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="291dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/img"
+            tools:src="@drawable/coder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:id="@+id/progressBar"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                android:progress="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_progressBar"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                tools:text="0/9"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_option_one"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textColor="#7A8089"
+            android:background="@drawable/default_option_border_bg"
+            tools:text="Azmat Roshan"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_option_two"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textColor="#7A8089"
+            tools:text="Azmat Roshan"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_option_three"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:textColor="#7A8089"
+            tools:text="Azmat Roshan"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_option_four"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textColor="#7A8089"
+            android:background="@drawable/default_option_border_bg"
+            tools:text="Azmat Roshan"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submit"
+            android:text="@string/submit"
+            android:layout_margin="10dp"
+            android:background="@color/design_default_color_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</ScrollView>
